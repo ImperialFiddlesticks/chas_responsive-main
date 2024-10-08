@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  display: none;
+}
+.navIcon {
+  display: block;
+  color: white;
+  margin-right: 25px;
+  font-size: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+.cat2 {
+  width: 100%;
+}
+.catGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.memberFormBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.memberForm {
+  width: 370px;
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+input {
+  width: 175px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+}
+.formInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select {
+  width: 175px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 15px;
+  margin-top: 25px;
+}
+label {
+  margin-left: 15px;
+}
+.favoriteAnimal {
+  margin-top: 25px;
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.checkbox {
+  width: 30px;
+}
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+form button {
+  padding: 10px;
+  width: 100px;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  nav {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+  }
+  nav a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  .navLink:hover {
+    background-color: #555;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .navIcon {
+    display: none;
+  }
+
+  .container {
+    width: 900px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .section1 img {
+    width: 50%;
+  }
+  .catGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .catGrid img {
+    margin: 0;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 400px 400px;
+  }
+  .favoriteAnimal {
+    grid-column: span 2;
+  }
+  select {
+    width: 250px;
+  }
+  .agreement {
+    grid-column: span 2;
+  }
+  .memberForm {
+    width: 900px;
+  }
+  .submitButton {
+    grid-column: span 2;
+  }
+}

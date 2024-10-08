@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f2193df336.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kattsidan</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kattsidan</h1>
+      <nav>
+        <a href="#">Start</a>
+        <a href="#">Katter</a>
+        <a href="#">Om oss</a>
+        <a href="#">Kontakt</a>
+      </nav>
+      <div class="navIcon"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <main>
+      <div class="memberFormBox">
+        <div class="memberForm">
+            <h2>Bli Medlem</h2>
+            <form action="https://httpbin.org/anything" method="post">
+              <div class="formInput"> 
+              <label for="firstName">Förnamn</label>
+                <input id="firstName" name="FirstName" type="text" />
+              </div> 
+              <div class="formInput">
+                <label for="lastName">Efternamn</label>
+                <input id="lastName" name="LastName" type="text" />
+              </div>
+              <div class="formInput">
+                <label for="username">Användarnamn</label>
+                <input id="username" name="Username" type="text" />
+              </div>
+              <div class="formInput">
+                <label for="password">Lösenord</label>
+                <input id="password" name="Password" type="password" />
+              </div>
+              <div class="formInput">
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" />
+              </div>
+              <div class="favoriteAnimal">
+                <label for="pet-select">Vad är ditt favoritdjur?</label>
+                <select name="pets" id="pet-select">
+                  <option value="">Välj ett djur</option>
+                  <option value="dog">Hund</option>
+                  <option value="cat">Katt</option>
+                  <option value="bunny">Kanin</option>
+                  <option value="goldfish">Guldfisk</option>
+                </select>
+              </div>
+              <div class="agreement">
+                <input class="checkbox" type="checkbox" id="userAgreement" name="UserAgreement"/>
+                <label for="userAgreement">Jag godkänner alla villkor</label>
+              </div>
+              <div class="submitButton">
+                <button type="submit">Skicka</button>
+              </div>
+            </div>
+      </div>
+    </main>
+    <footer>&copy; 2023 Kattsidan</footer>
+  </body>
+</html>
